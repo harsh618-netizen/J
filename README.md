@@ -1,34 +1,31 @@
-# 🔐 Password Strength Checker
+# Python Mini Projects
 
-A beginner-friendly Python command-line tool that checks password strength locally and provides useful security feedback.
+This repository contains small, practical Python projects for learning and portfolio building.
 
-## ✨ Features
+## Projects
 
-- Strength score from 0–8
-- Detects lowercase, uppercase, numbers, and special characters
-- Rewards longer passwords
-- Flags repeated characters and common patterns
-- Uses `getpass` so the password is hidden while typing
-- Does not store or send passwords anywhere
+### 🔐 Password Strength Checker
+A local-only CLI utility that scores password strength and gives security suggestions.
 
-## 🚀 Run
+Run:
 
 ```bash
 python password_strength_checker.py
 ```
 
-## 📁 Project Structure
+### 💰 Daily Expense Tracker
+A local CLI expense tracker that saves records to `expenses.csv` and prints total spending by category.
 
-```text
-.
-├── password_strength_checker.py
-└── README.md
+Run:
+
+```bash
+python daily_expense_tracker.py
 ```
 
-## 🛡️ Security Note
+## Security
 
-This project is designed as a learning utility. Never reuse passwords across important accounts. For real-world security, use a reputable password manager and unique, long passwords or passphrases.
+Projects run locally and do not require API keys. Do not commit passwords, private tokens, or other secrets.
 
-## 📄 License
+## License
 
 MIT License.
