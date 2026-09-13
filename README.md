@@ -22,6 +22,15 @@ Run:
 python daily_expense_tracker.py
 ```
 
+### 📝 Text Analyzer
+A local CLI utility that counts words, characters, sentences, paragraphs, and estimated reading time.
+
+Run:
+
+```bash
+python text_analyzer.py
+```
+
 ## Security
 
 Projects run locally and do not require API keys. Do not commit passwords, private tokens, or other secrets.
