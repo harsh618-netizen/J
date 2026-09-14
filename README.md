@@ -31,6 +31,15 @@ Run:
 python text_analyzer.py
 ```
 
+### 🧹 CSV Data Cleaner
+A practical utility that trims whitespace, normalizes CSV values, removes duplicate rows, and writes a cleaned output file.
+
+Run:
+
+```bash
+python csv_data_cleaner.py input.csv cleaned.csv
+```
+
 ## Security
 
 Projects run locally and do not require API keys. Do not commit passwords, private tokens, or other secrets.
