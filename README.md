@@ -40,6 +40,23 @@ Run:
 python csv_data_cleaner.py input.csv cleaned.csv
 ```
 
+### 🧰 JSON Toolkit
+A command-line utility to validate JSON, pretty-print it, save formatted output, and flatten nested objects into dotted keys.
+
+Examples:
+
+```bash
+python json_toolkit.py data.json
+python json_toolkit.py data.json --output formatted.json
+python json_toolkit.py data.json --flatten
+```
+
+Run tests:
+
+```bash
+python -m unittest discover -s tests
+```
+
 ## Security
 
 Projects run locally and do not require API keys. Do not commit passwords, private tokens, or other secrets.
