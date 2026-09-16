@@ -51,6 +51,18 @@ python json_toolkit.py data.json --output formatted.json
 python json_toolkit.py data.json --flatten
 ```
 
+### 🛡️ File Integrity Checker
+A lightweight cybersecurity utility that calculates a file's SHA-256 hash and can verify it against an expected hash.
+
+Examples:
+
+```bash
+python file_hash_checker.py example.zip
+python file_hash_checker.py example.zip --expected <sha256-hash>
+```
+
+Use it to detect accidental or unexpected file changes after downloads or transfers.
+
 Run tests:
 
 ```bash
