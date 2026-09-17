@@ -74,11 +74,28 @@ python markdown_toc_generator.py README.md --max-level 2
 python markdown_toc_generator.py README.md --output toc.md
 ```
 
+### 🌐 URL Health Checker
+A standard-library CLI tool that checks whether websites are reachable and reports HTTP status codes and response time. Multiple URLs can be checked concurrently.
+
+Examples:
+
+```bash
+python url_health_checker.py example.com https://github.com
+python url_health_checker.py example.com example.org --timeout 3 --workers 2
+```
+
+The tool returns a non-zero exit code if any URL is not reachable with a successful HTTP response.
+
 Run tests:
 
 ```bash
 python -m unittest discover -s tests
 ```
+
+## Requirements
+
+- Python 3.10+
+- No third-party packages required
 
 ## Security
 
