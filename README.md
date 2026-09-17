@@ -63,6 +63,17 @@ python file_hash_checker.py example.zip --expected <sha256-hash>
 
 Use it to detect accidental or unexpected file changes after downloads or transfers.
 
+### 📚 Markdown TOC Generator
+A developer utility that scans Markdown headings and generates a clean table of contents with anchor links. It ignores headings inside fenced code blocks and handles duplicate heading slugs.
+
+Examples:
+
+```bash
+python markdown_toc_generator.py README.md
+python markdown_toc_generator.py README.md --max-level 2
+python markdown_toc_generator.py README.md --output toc.md
+```
+
 Run tests:
 
 ```bash
