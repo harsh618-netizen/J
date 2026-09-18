@@ -86,7 +86,17 @@ python url_health_checker.py example.com example.org --timeout 3 --workers 2
 
 The tool returns a non-zero exit code if any URL is not reachable with a successful HTTP response.
 
-Run tests:
+### 📊 Log File Analyzer
+A beginner-friendly log analysis utility that counts log levels, finds frequent IP addresses, and produces a simple terminal report. It handles UTF-8 files with replacement for invalid bytes and uses only the Python standard library.
+
+Example:
+
+```bash
+python log_file_analyzer.py app.log
+```
+
+### 🧪 Tests
+Run all unit tests with:
 
 ```bash
 python -m unittest discover -s tests
