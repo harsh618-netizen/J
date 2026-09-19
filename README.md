@@ -61,16 +61,13 @@ python file_hash_checker.py example.zip
 python file_hash_checker.py example.zip --expected <sha256-hash>
 ```
 
-Use it to detect accidental or unexpected file changes after downloads or transfers.
-
 ### 📚 Markdown TOC Generator
-A developer utility that scans Markdown headings and generates a clean table of contents with anchor links. It ignores headings inside fenced code blocks and handles duplicate heading slugs.
+A developer utility that scans Markdown headings and generates a clean table of contents with anchor links.
 
 Examples:
 
 ```bash
 python markdown_toc_generator.py README.md
-python markdown_toc_generator.py README.md --max-level 2
 python markdown_toc_generator.py README.md --output toc.md
 ```
 
@@ -84,10 +81,8 @@ python url_health_checker.py example.com https://github.com
 python url_health_checker.py example.com example.org --timeout 3 --workers 2
 ```
 
-The tool returns a non-zero exit code if any URL is not reachable with a successful HTTP response.
-
 ### 📊 Log File Analyzer
-A beginner-friendly log analysis utility that counts log levels, finds frequent IP addresses, and produces a simple terminal report. It handles UTF-8 files with replacement for invalid bytes and uses only the Python standard library.
+A beginner-friendly log analysis utility that counts log levels, finds frequent IP addresses, and produces a simple terminal report.
 
 Example:
 
@@ -95,7 +90,26 @@ Example:
 python log_file_analyzer.py app.log
 ```
 
-### 🧪 Tests
+### ✅ Habit Tracker
+A local JSON-backed CLI for creating habits, marking them complete, and viewing current streaks. It uses only the Python standard library.
+
+Examples:
+
+```bash
+python habit_tracker.py add "Read 20 pages"
+python habit_tracker.py done "Read 20 pages"
+python habit_tracker.py status
+python habit_tracker.py --file my_habits.json status
+```
+
+Dates can be supplied for testing or backfilling:
+
+```bash
+python habit_tracker.py done "Read 20 pages" --date 2026-09-19
+```
+
+## Tests
+
 Run all unit tests with:
 
 ```bash
