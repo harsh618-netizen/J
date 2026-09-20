@@ -108,6 +108,17 @@ Dates can be supplied for testing or backfilling:
 python habit_tracker.py done "Read 20 pages" --date 2026-09-19
 ```
 
+### 🗂️ Duplicate File Finder
+A local utility that finds duplicate files by first grouping files by size and then comparing SHA-256 hashes. It streams large files in chunks instead of loading them fully into memory.
+
+Example:
+
+```bash
+python duplicate_file_finder.py ./Downloads
+```
+
+The report groups matching files and shows how many duplicate copies were found. It only reads files; it does not delete or modify anything.
+
 ## Tests
 
 Run all unit tests with:
