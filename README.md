@@ -139,3 +139,20 @@ Projects run locally and do not require API keys. Do not commit passwords, priva
 ## License
 
 MIT License.
+
+
+### 📦 Folder Size Analyzer
+A safe, read-only Python CLI utility that scans a directory and lists its largest immediate subfolders, including nested file sizes. It uses only the standard library and does not modify or delete files.
+
+Examples:
+
+```bash
+python folder_size_analyzer.py .
+python folder_size_analyzer.py ~/Downloads --top 5
+```
+
+Run its tests:
+
+```bash
+python -m unittest tests/test_folder_size_analyzer.py
+```
